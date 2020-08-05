@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Home Page</a>
+    <form id="userPref" onsubmit="onSavePref(event)">
+        <table>
+            <tr>
+                <td><label for="bco">Background color:</label></td>
+                <td> <input type="color" id="bco" name="bco" value="#FFD700" /></td>
+            </tr>
+            <tr>
+                <td><label for="fco">Font color:</label></td>
+                <td> <input type="color" id="fco" name="fco" value="#000000" /></td>
+            </tr>
+            <tr>
+                <!-- <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" /></td>
+            </tr>
+            <tr>
+                <td><label for="time">Time of Birth:</label></td>
+                <td><input type="time" id="time" name="time" /></td>
+            </tr>
+            <td><label for="age">Age:</label></td>
+            <td><input type="range" id="age" name="age" min="18" max="120" value="28" onchange="showAge(this.value);" />
+                <span id="sAge">28</span>
+            </td>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" name="email" /></td>
+            </tr> -->
+
+            <tr>
+                <td><button>Save</button></td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/utilService.js"></script>
+    <script src="js/userPrefService.js"></script>
+    <script src="js/placeService.js"></script>
+    <script src="js/placeController.js"></script>
+
+</body>
+</html>
